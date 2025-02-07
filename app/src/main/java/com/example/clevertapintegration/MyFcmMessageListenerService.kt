@@ -12,7 +12,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         super.onNewToken(token)
         Log.d("FCM Token", "Received token: $token")
 
-        // Send token to CleverTap
         CleverTapAPI.getDefaultInstance(applicationContext)?.pushFcmRegistrationId(token, true)
     }
 
@@ -20,7 +19,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         super.onMessageReceived(remoteMessage)
         Log.d("FCM Message", "Message received: ${remoteMessage.data}")
 
-        // Handle CleverTap Push Notification
         if (remoteMessage.data.isNotEmpty()) {
             val extras = Bundle()
             for ((key, value) in remoteMessage.data) {

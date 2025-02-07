@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Required to allow the app to send events and user profile information -->
     <uses-permission android:name="android.permission.INTERNET"/>
-    <!-- Recommended so that CleverTap knows when to attempt a network call -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
@@ -27,15 +25,12 @@
             </intent-filter>
         </service>
 
-
-
         <meta-data
             android:name="CLEVERTAP_ACCOUNT_ID"
             android:value="Z44-Z4K-K65Z"/>
         <meta-data
             android:name="CLEVERTAP_TOKEN"
             android:value="TEST-341-441"/>
-        <!-- IMPORTANT: To force use Google AD ID to uniquely identify  users, use the following meta tag. GDPR mandates that if you are using this tag, there is prominent disclousure to your end customer in their application. Read more about GDPR here - https://clevertap.com/blog/in-preparation-of-gdpr-compliance/ -->
         <meta-data
             android:name="CLEVERTAP_USE_GOOGLE_AD_ID"
             android:value="1"/>
@@ -52,5 +47,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.clevertapintegration.app-mergeDebugResources-62:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.10.2\\transforms\\0293ddfb12380e2313ae38b4e3c034dd\\transformed\\clevertap-android-sdk-7.2.2\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,96,147,200,260,321,380,438,497,554,608",
+                        "endColumns": "40,50,52,59,60,58,57,58,56,53,51",
+                        "endOffsets": "91,142,195,255,316,375,433,492,549,603,655"
+                    },
+                    "to": {
+                        "startLines": "2,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,305,356,409,469,530,589,647,706,763,817",
+                        "endColumns": "40,50,52,59,60,58,57,58,56,53,51",
+                        "endOffsets": "91,351,404,464,525,584,642,701,758,812,864"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.10.2\\transforms\\1b8c7e7174535d39e608417a1b4bd1e0\\transformed\\appcompat-1.7.0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "96,166,237",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "161,232,300"
+                    }
+                }
+            ]
+        }
+    ]
+}

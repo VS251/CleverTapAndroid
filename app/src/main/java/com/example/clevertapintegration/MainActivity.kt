@@ -45,22 +45,17 @@ class MainActivity : ComponentActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnTestEvent = findViewById<Button>(R.id.btnTestEvent)
 
-        // Handle LOGIN Button Click
         btnLogin.setOnClickListener {
             val name = editTextName.text.toString()
             val email = editTextEmail.text.toString()
 
-            // Add code to handle login here
             val profileUpdate = HashMap<String, Any>()
             profileUpdate["Name"] = name
             profileUpdate["Email"] = email
-            // Send to CleverTap
             CleverTapAPI.getDefaultInstance(applicationContext)?.onUserLogin(profileUpdate)
         }
 
-        // Handle TEST EVENT Button Click
         btnTestEvent.setOnClickListener {
-            // Push a test event to CleverTap
             CleverTapAPI.getDefaultInstance(applicationContext)?.pushEvent("TEST")
         }
 
